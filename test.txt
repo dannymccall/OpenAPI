@@ -1,0 +1,15 @@
+GET http://localhost:5000
+
+
+POST http://localhost:5000/add-user
+content-type: application/json
+
+{
+    "firstname":"Rudolph",
+    "lastname": "Anyetei",
+    "email": "ranyetei@gmail.com"
+}
+
+GET http://localhost:5000/get-all-users
+
+GET http://localhost:5000/get-user?_id=64f8ae761f92c4147e7766bc
